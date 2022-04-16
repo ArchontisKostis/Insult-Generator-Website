@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: hsl(213, 23%, 9%);
     font-family: 'Manrope', sans-serif;
 }
@@ -24,6 +25,25 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: 33em;
+    height: 20em;
+    margin-top: 1em;
+}
+
+.alert {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #04AA6D;
+    padding: 0.5em;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.alert:hover {
+    cursor: pointer;
+    background-color: #038555;
+    color: rgb(221, 218, 218);
 }
 
 .card {
@@ -53,6 +73,7 @@ main {
     color: hsl(2, 93%, 53%);
     font-size: 12px;
     letter-spacing: 0.3em;
+    font-weight: 800;
 }
 
 .card .card-content h1::selection {
@@ -106,7 +127,7 @@ main {
     border-radius: 50px;
     position: relative;
     align-self: flex-end;
-    transform: translateY(285%);
+    transform: translateY(35%);
 }
 
 #new-quote:hover {
