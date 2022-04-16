@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::selection{
+    color: hsl(218, 23%, 16%);
+    background: rgba(255, 255, 255, 0.433);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 23%, 9%);
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 20%, 18%);
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.201), 0 0 40px rgba(32, 32, 32, 0.322), 0 0 80px rgba(32, 32, 32, 0.322);
+    border-radius: 15px;
+    width: 30em;
+    height: 18em;
+    position: absolute;
+    padding: 10px 20px 10px;
+}
+
+.card .card-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+
+.card .card-content h1{
+    color: hsl(2, 93%, 53%);
+    font-size: 12px;
+    letter-spacing: 0.3em;
+}
+
+.card .card-content h1::selection {
+    color: hsl(2, 93%, 53%);
+}
+
+.card .card-content #quote {
+    font-size: 23px;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: rgba(255, 255, 255, 0.786);
+}
+
+#copy-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.322);
+    position: absolute;
+    align-self: flex-start;
+    justify-self: flex-start;
+    transform: translate(-195%, -430%);
+}
+
+#copy-icon:hover {
+    cursor: pointer;
+    background-color: rgba(32, 32, 32, 0.322);
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.322), 0 0 40px rgba(32, 32, 32, 0.322), 0 0 80px rgba(32, 32, 32, 0.322);
+}
+
+#copy-icon:active {
+    cursor: pointer;
+    background-color: rgba(32, 32, 32, 0.519);
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.322), 0 0 40px rgba(32, 32, 32, 0.322), 0 0 80px rgba(32, 32, 32, 0.322);
+}
+
+#new-quote {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(2, 93%, 53%);
+    border: none;
+    width: 4em;
+    height: 4em;
+    border-radius: 50px;
+    position: relative;
+    align-self: flex-end;
+    transform: translateY(285%);
+}
+
+#new-quote:hover {
+    cursor: pointer;
+    background: hsl(2, 93%, 53%);
+    box-shadow: 0 0 10px hsl(2, 93%, 53%), 0 0 40px hsl(2, 93%, 53%), 0 0 80px hsl(2, 93%, 53%);
+    transition: box-shadow 0.3s ease-in;
+}
+
+#new-quote:active {
+    background-color: hsl(2, 93%, 43%);
+    box-shadow: 0 0 10px hsl(2, 93%, 43%), 0 0 40px hsl(2, 93%, 43%), 0 0 80px hsl(2, 93%, 43%);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    /* Height and Color of Footer */
+    height: 1.5em;
+    background-color: hsl(217, 20%, 18%);
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(2, 93%, 53%); 
+    text-decoration: none;
+}
+
+.attribution a:hover { 
+    text-decoration: underline;
+}
+
+.attribution a::selection { 
+    color: hsl(2, 93%, 53%);
+}
