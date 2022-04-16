@@ -6,7 +6,7 @@ const adviceQuote = document.getElementById("quote");
 
 
 function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
-    fetch("https://evilinsult.com/generate_insult.php?lang=en&type=json")
+    fetch("https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json")
     .then(res => {
         return res.json();
     })
