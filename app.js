@@ -3,6 +3,7 @@ const copyButton = document.getElementById("copy-icon");
 const adviceIdSpan = document.getElementById("advice-id");
 const adviceQuote = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
+const takePhotoIcon = document.getElementById("downloadLink");
 
 
 
@@ -14,6 +15,9 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
     .then(loadedAdvice => {
         var adviceData = loadedAdvice;
         adviceQuote.innerHTML = `"${adviceData.insult}"`
+        adviceQuote.style.opacity = 1;
+        makeHtmlPhoto(adviceData.insult, takePhotoIcon);
+        
     })
     .catch( err => {
         console.log(err);
@@ -21,20 +25,18 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
 }
 
 function fadeIn(){
-    alertBox.style.visibility = "visible";
     alertBox.style.opacity = 1;
 }
 
 function fadeOut(){
-    alertBox.style.visibility = "hidden";
     alertBox.style.opacity = 0;
 }
 
 getAdviceFromAPI();
 
 newQuoteButton.onclick = function (evt) {  
+    adviceQuote.style.opacity = 0;
     getAdviceFromAPI();
-    fadeOut();
     
 }
 
