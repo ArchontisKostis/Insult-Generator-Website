@@ -61,6 +61,15 @@ main {
     padding: 10px 20px 10px;
 }
 
+#icon {
+    transform: translate(-195%, -300%);
+}
+#icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card .card-content {
     display: flex;
     justify-content: space-evenly;
@@ -91,7 +100,7 @@ main {
     transition: all 1s;
 }
 
-#copy-icon {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,13 +115,13 @@ main {
     transform: translate(-195%, -430%);
 }
 
-#copy-icon:hover {
+.button:hover {
     cursor: pointer;
     background-color: rgba(32, 32, 32, 0.322);
     box-shadow: 0 0 10px rgba(32, 32, 32, 0.322), 0 0 40px rgba(32, 32, 32, 0.322), 0 0 80px rgba(32, 32, 32, 0.322);
 }
 
-#copy-icon:active {
+.button:active {
     cursor: pointer;
     background-color: rgba(32, 32, 32, 0.519);
     box-shadow: 0 0 10px rgba(32, 32, 32, 0.322), 0 0 40px rgba(32, 32, 32, 0.322), 0 0 80px rgba(32, 32, 32, 0.322);

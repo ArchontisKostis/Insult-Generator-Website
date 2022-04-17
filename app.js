@@ -3,6 +3,7 @@ const copyButton = document.getElementById("copy-icon");
 const adviceIdSpan = document.getElementById("advice-id");
 const adviceQuote = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
+const takePhotoIcon = document.getElementById("downloadLink");
 
 
 
@@ -15,9 +16,8 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
         var adviceData = loadedAdvice;
         adviceQuote.innerHTML = `"${adviceData.insult}"`
         adviceQuote.style.opacity = 1;
+        makeHtmlPhoto(adviceData.insult, takePhotoIcon);
         
-        var link = makeHtmlPhoto(adviceData.insult);
-        console.log(link);
     })
     .catch( err => {
         console.log(err);
