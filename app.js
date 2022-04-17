@@ -14,6 +14,7 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
     .then(loadedAdvice => {
         var adviceData = loadedAdvice;
         adviceQuote.innerHTML = `"${adviceData.insult}"`
+        adviceQuote.style.opacity = 1;
     })
     .catch( err => {
         console.log(err);
@@ -21,20 +22,18 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
 }
 
 function fadeIn(){
-    alertBox.style.visibility = "visible";
     alertBox.style.opacity = 1;
 }
 
 function fadeOut(){
-    alertBox.style.visibility = "hidden";
     alertBox.style.opacity = 0;
 }
 
 getAdviceFromAPI();
 
 newQuoteButton.onclick = function (evt) {  
+    adviceQuote.style.opacity = 0;
     getAdviceFromAPI();
-    fadeOut();
     
 }
 
