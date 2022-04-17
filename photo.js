@@ -27,7 +27,7 @@ function makeHtmlPhoto(anInsult, icon){
           }
         })
         .then(data => {
-            icon.href = `https://twitter.com/intent/tweet?url=${data.url}`;
+            icon.href = data.url;
             icon.download = "insult.png"
         })
         .catch(err => console.error(err));
