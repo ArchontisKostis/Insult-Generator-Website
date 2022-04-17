@@ -15,6 +15,9 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
         var adviceData = loadedAdvice;
         adviceQuote.innerHTML = `"${adviceData.insult}"`
         adviceQuote.style.opacity = 1;
+        
+        var link = makeHtmlPhoto(adviceData.insult);
+        console.log(link);
     })
     .catch( err => {
         console.log(err);
