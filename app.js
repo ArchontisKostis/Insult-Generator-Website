@@ -3,7 +3,7 @@ const copyButton = document.getElementById("copy-icon");
 const adviceIdSpan = document.getElementById("advice-id");
 const adviceQuote = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
-const takePhotoIcon = document.getElementById("downloadLink");
+const shareButton = document.getElementById("icon");
 
 
 
@@ -16,7 +16,7 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
         var adviceData = loadedAdvice;
         adviceQuote.innerHTML = `"${adviceData.insult}"`
         adviceQuote.style.opacity = 1;
-        makeHtmlPhoto(adviceData.insult, takePhotoIcon);
+        // makeHtmlPhoto(adviceData.insult, shareButton);
         
     })
     .catch( err => {
@@ -44,6 +44,11 @@ copyButton.onclick = function (evt) {
     navigator.clipboard.writeText(adviceQuote.textContent);
     fadeIn();
     setTimeout(fadeOut, 1000);
+}
+
+shareButton.onclick = function (evt) {
+    var pageUrl = window.location.href;
+    window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=Yo!%0AI%20just%20found%20this%20website%20that%20displays%20you%20a%20random%20insult%20just%20for%20fun!!%20%F0%9F%98%88%0AMake%20sure%20to%20check%20it!%20%F0%9F%91%BA`);
 }
 
 
