@@ -17,7 +17,6 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
         adviceQuote.innerHTML = `"${adviceData.insult}"`
         adviceQuote.style.opacity = 1;
         // makeHtmlPhoto(adviceData.insult, shareButton);
-        
     })
     .catch( err => {
         console.log(err);
@@ -26,10 +25,12 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
 
 function fadeIn(){
     alertBox.style.opacity = 1;
+    alertBox.style.visibility = 'visible';
 }
 
 function fadeOut(){
     alertBox.style.opacity = 0;
+    alertBox.style.visibility = 'hidden';
 }
 
 getAdviceFromAPI();

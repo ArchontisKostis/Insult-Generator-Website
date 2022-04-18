@@ -31,6 +31,7 @@ main {
 }
 
 .alert {
+    visibility: hidden;
     display: block;
     opacity: 0;
     background-color: #04AA6D;   /* */
