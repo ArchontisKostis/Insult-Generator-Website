@@ -34,7 +34,7 @@
     }
 
     .card .card-content .divider{
-        content: url(images/pattern-divider-mobile.svg);
+        content: url(/assets/images/pattern-divider-mobile.svg);
     }
 
     #new-quote {
