@@ -23,5 +23,7 @@ The webpage has 3 Basic features
 
 * This website uses the [Evil Insult API](http://evilinsult.com/) to generate random insults.
 
+* The Graphics for the website are designed by me using [Inkscape](http://https://inkscape.org//) and are free for any use.
+
 ## DISCLAIMER ⚠️
 The website was made for educational & entertaintment purposes and has no intention of offending anyone.
