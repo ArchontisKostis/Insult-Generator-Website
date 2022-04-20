@@ -1,4 +1,4 @@
-# Insult Generator Website
+# Insult Generator Website 😈
 
 A very simple HTML/CSS/JS website that displays a card with a random insult using the [Evil Insult API](http://evilinsult.com/).
 
@@ -8,7 +8,7 @@ A very simple HTML/CSS/JS website that displays a card with a random insult usin
 <br/> Get the Mockup Template [HERE](https://www.freepik.com/free-psd/digital-devices-screen-editable_16303836.htm).
 <br/> Edited by me with [GIMP](https://www.gimp.org/).
 
-## Description
+## Description 📓
 
 The website was made using HTML & CSS for the Front-end and Javascript for the Back-end.
 
@@ -17,11 +17,11 @@ The webpage has 3 Basic features
 2. Copy insult to clipboard
 3. Share the website on [Twitter](https://twitter.com/)
 
-## Acknowledgments
+## Acknowledgments 🌟
 
 * Inspired by the [Advice generator app](https://frontendmentor.io/challenges/advice-generator-app-QdUG-13db) by [FontendMentor](https://frontendmentor.io).
 
-* This website uses the [Evil Insult API](http://evilinsult.com/) to generate random quotes insults.
+* This website uses the [Evil Insult API](http://evilinsult.com/) to generate random insults.
 
-## DISCLAIMER
+## DISCLAIMER ⚠️
 The website was made for educational & entertaintment purposes and has no intention of offending anyone.
