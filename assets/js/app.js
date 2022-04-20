@@ -5,18 +5,22 @@ const adviceQuote = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
 const shareButton = document.getElementById("icon");
 
+const apiUrl =  "https://uselessfacts.jsph.pl/random.json"; //"https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json";
 
 
 function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
-    fetch("https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json")
+    fetch(apiUrl)
     .then(res => {
         return res.json();
     })
     .then(loadedAdvice => {
-        var adviceData = loadedAdvice;
-        adviceQuote.innerHTML = `"${adviceData.insult}"`
-        adviceQuote.style.opacity = 1;
+        // var adviceData = loadedAdvice;
+        // adviceQuote.innerHTML = `"${adviceData.insult}"`
+        // adviceQuote.style.opacity = 1;
         // makeHtmlPhoto(adviceData.insult, shareButton);
+        console.log(loadedAdvice);
+        adviceQuote.innerHTML = `"${loadedAdvice.text}"`;
+        adviceQuote.style.opacity = 1;
     })
     .catch( err => {
         console.log(err);
