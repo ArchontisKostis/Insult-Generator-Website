@@ -17,8 +17,6 @@ The webpage has 3 Basic features
 2. Copy insult to clipboard
 3. Share the website on [Twitter](https://twitter.com/)
 
-## Authors
-
 ## Version History
 
 * 1.0.0
