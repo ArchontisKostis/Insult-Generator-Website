@@ -34,4 +34,4 @@ The webpage has 3 Basic features
 * This website uses the [Evil Insult API](http://evilinsult.com/) to generate random quotes insults.
 
 ## DISCLAIMER
-The website was made for educational & entertaintment purposes.
+The website was made for educational & entertaintment purposes and has no intention of offending anyone.
