@@ -17,11 +17,6 @@ The webpage has 3 Basic features
 2. Copy insult to clipboard
 3. Share the website on [Twitter](https://twitter.com/)
 
-## Version History
-
-* 1.0.0
-    * Initial Release
-
 ## Acknowledgments
 
 * Inspired by the [Advice generator app](https://frontendmentor.io/challenges/advice-generator-app-QdUG-13db) by [FontendMentor](https://frontendmentor.io).
