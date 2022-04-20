@@ -2,7 +2,7 @@
 
 A very simple HTML/CSS/JS website that displays a card with a random insult using the [Evil Insult API](http://evilinsult.com/).
 
-![Alt text](assets/css/images/insultGeneratorMockup.png "Optional Title")
+![Alt text](assets/images/insultGeneratorMockup.png "Optional Title")
 
 ## Description
 
