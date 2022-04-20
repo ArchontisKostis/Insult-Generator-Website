@@ -21,10 +21,7 @@ The webpage has 3 Basic features
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
+* 1.0.0
     * Initial Release
 
 ## Acknowledgments
