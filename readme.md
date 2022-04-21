@@ -2,7 +2,7 @@
 
 A very simple HTML/CSS/JS website that displays a card with a random insult using the [Evil Insult API](http://evilinsult.com/).
 
-![Alt text](assets/images/insultGeneratorMockup.png "Optional Title")
+![Website Mockup](assets/images/insultGeneratorMockup.png "Website Mockup")
 
 > Device mockup psd created by [Rawpixel](http://rawpixel.com/) - [Freepik](http://www.freepik.com/).
 <br/> Get the Mockup Template [HERE](https://www.freepik.com/free-psd/digital-devices-screen-editable_16303836.htm).
