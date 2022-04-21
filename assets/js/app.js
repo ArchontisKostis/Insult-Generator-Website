@@ -1,11 +1,11 @@
-const newQuoteButton = document.getElementById("new-quote");
+const newInsultButton = document.getElementById("new-quote");
 const copyButton = document.getElementById("copy-icon");
 const adviceIdSpan = document.getElementById("advice-id");
 const adviceQuote = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
 const shareButton = document.getElementById("icon");
 
-const apiUrl =  "https://uselessfacts.jsph.pl/random.json"; //"https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json";
+const apiUrl =  "https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json";
 
 
 function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
@@ -13,13 +13,8 @@ function getAdviceFromAPI(adviceIdElement, adviceTextElement) {
     .then(res => {
         return res.json();
     })
-    .then(loadedAdvice => {
-        // var adviceData = loadedAdvice;
-        // adviceQuote.innerHTML = `"${adviceData.insult}"`
-        // adviceQuote.style.opacity = 1;
-        // makeHtmlPhoto(adviceData.insult, shareButton);
-        console.log(loadedAdvice);
-        adviceQuote.innerHTML = `"${loadedAdvice.text}"`;
+    .then(loadedInsult => {
+        adviceQuote.innerHTML = `"${loadedInsult.insult}"`;
         adviceQuote.style.opacity = 1;
     })
     .catch( err => {
@@ -39,7 +34,7 @@ function fadeOut(){
 
 getAdviceFromAPI();
 
-newQuoteButton.onclick = function (evt) {  
+newInsultButton.onclick = function (evt) {  
     adviceQuote.style.opacity = 0;
     getAdviceFromAPI();
     
