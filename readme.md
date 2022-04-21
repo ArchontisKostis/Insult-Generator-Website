@@ -17,6 +17,8 @@ The webpage has 3 Basic features
 2. Copy insult to clipboard
 3. Share the website on [Twitter](https://twitter.com/)
 
+See the website [LIVE](https://archontiskostis.github.io/Insult-Generator-Website/)
+
 ## Acknowledgments 🌟
 
 * Inspired by the [Advice generator app](https://frontendmentor.io/challenges/advice-generator-app-QdUG-13db) by [FontendMentor](https://frontendmentor.io).
