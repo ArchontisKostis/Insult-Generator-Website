@@ -19,6 +19,16 @@ The webpage has 3 Basic features
 
 See the website [LIVE](https://archontiskostis.github.io/Insult-Generator-Website/)
 
+## My Process
+### Built with
+* Semantic HTML5 markup
+* CSS
+* CSS Flexbox
+* Vanilla JS
+
+### Continued Development
+The next step is to remake the website using a Front-End JS Framework such as React.js and adding the functionality of downloading the loaded insult as .png .
+
 ## Acknowledgments 🌟
 
 * Inspired by the [Advice generator app](https://frontendmentor.io/challenges/advice-generator-app-QdUG-13db) by [FontendMentor](https://frontendmentor.io).
