@@ -1,6 +1,6 @@
 # Insult Generator Website 😈
 
-A very simple HTML/CSS/JS website that displays a card with a random insult using the [Evil Insult API](http://evilinsult.com/).
+A very simple HTML/CSS/JS website that displays a card with a random insult using the [Insult API](https://insult.mattbas.org/api/).
 
 ![Website Mockup](assets/images/insultGeneratorMockup.png "Website Mockup")
 
@@ -33,7 +33,7 @@ The next step is to remake the website using a Front-End JS Framework such as Re
 
 * Inspired by the [Advice generator app](https://frontendmentor.io/challenges/advice-generator-app-QdUG-13db) by [FontendMentor](https://frontendmentor.io).
 
-* This website uses the [Evil Insult API](http://evilinsult.com/) to generate random insults.
+* This website uses the [Insult API](https://insult.mattbas.org/api/) to generate random insults.
 
 * The Graphics for the website are designed by me using [Inkscape](http://https://inkscape.org//) and are free for any use.
 

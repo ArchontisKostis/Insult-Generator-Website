@@ -5,7 +5,7 @@ const insultParagraph = document.getElementById("quote");
 const alertBox = document.getElementById("alert");
 const shareButton = document.getElementById("icon");
 
-const apiUrl =  "https://corsanywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json";
+const apiUrl =  "https://insult.mattbas.org/api/insult.json";
 
 /* FUNCTIONS DECLARATION */
 function getAdviceFromAPI() {
