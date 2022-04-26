@@ -7,6 +7,7 @@ const shareButton = document.getElementById("icon");
 
 const apiUrl =  "https://insult.mattbas.org/api/insult.json";
 
+
 /* FUNCTIONS DECLARATION */
 function getAdviceFromAPI() {
     fetch(apiUrl)
