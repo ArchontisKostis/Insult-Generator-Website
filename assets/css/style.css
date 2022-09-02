@@ -33,6 +33,7 @@ main {
 .alert {
     visibility: hidden;
     display: block;
+    box-sizing: border-box;
     opacity: 0;
     background-color: #04AA6D;   /* */
     box-shadow: 0 0 20px #000000b2;
@@ -40,12 +41,6 @@ main {
     color: rgb(226, 222, 222);
     border-radius: 8px;
     transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-
-.alert:hover {
-    cursor: pointer;
-    background-color: #038555;
-    color: rgb(221, 218, 218);
 }
 
 .card {
